@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aguva Investment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        h1 {
+            color: white;
+            background-color: #4c2e61;
+            font-size: 48px;
+            padding: 10px;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4c2e61;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #3a1f4d;
+        }
+        .login, .register, .calculator, .contact, .faq, .testimonials {
+            margin-top: 20px;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aguva Investment</h1>
+    <div class="content">
+        
+        <h2>Login</h2>
+        <div class="login">
+            <form action="#" method="post">
+                <label for="login_email">Email:</label>
+                <input type="email" id="login_email" name="email" required>
+                <label for="login_password">Password:</label>
+                <input type="password" id="login_password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#register">Register here</a></p>
+        </div>
+        
+        <h2 id="register">Register</h2>
+        <div class="register">
+            <form action="#" method="post">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" required>
+                <label for="phone">Mobile Number:</label>
+                <input type="text" id="phone" name="phone" required>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="custom">Custom</option>
+                </select>
+                <label for="password">Create Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+        
+        <h2>Loan Calculator</h2>
+        <div class="calculator">
+            <label for="calc_amount">Loan Amount (MWK):</label>
+            <input type="number" id="calc_amount" required>
+            <label for="calc_period">Repayment Period (Months):</label>
+            <select id="calc_period">
+                <option value="2">2 Months</option>
+                <option value="3">3 Months</option>
+                <option value="4">4 Months</option>
+            </select>
+            <button onclick="calculateLoan()">Calculate</button>
+            <p id="calc_result"></p>
+        </div>
+        
+        <h2>Contact Us</h2>
+        <div class="contact">
+            <label for="contact_name">Your Name:</label>
+            <input type="text" id="contact_name" required>
+            <label for="contact_email">Your Email:</label>
+            <input type="email" id="contact_email" required>
+            <label for="contact_message">Message:</label>
+            <textarea id="contact_message" rows="4" required></textarea>
+            <button>Send Message</button>
+        </div>
+        
+        <h2>FAQs</h2>
+        <div class="faq">
+            <p><strong>Q:</strong> How long does loan approval take?</p>
+            <p><strong>A:</strong> Typically within 48 hours.</p>
+            <p><strong>Q:</strong> Can I repay early?</p>
+            <p><strong>A:</strong> Yes, early repayment is allowed with no penalties.</p>
+        </div>
+        
+        <h2>Testimonials</h2>
+        <div class="testimonials">
+            <p>"Aguva helped me secure a loan quickly when I needed it most!" - John K.</p>
+            <p>"Reliable and professional loan service. Highly recommend!" - Mary M.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Copyright &copy; Aguva INVESTIMENT 2024</p>
+    </footer>
+</body>
+</html>
